@@ -4,7 +4,9 @@ import pandas as pd
 import warnings
 warnings.filterwarnings("ignore")
 
-headers = ({'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', 'Accept-Language': 'en-US, en;q=0.5'})
+User_Agent = "" #  Add you user agent
+
+headers = ({'User-Agent': User_Agent, 'Accept-Language': 'en-US, en;q=0.5'})
 
 df = pd.DataFrame(columns=["product_name", "main_category", "sub_category_1", "sub_category_2", "product_price", "product_rating", "user_rating", "comment_title", "comment_content"])
 
